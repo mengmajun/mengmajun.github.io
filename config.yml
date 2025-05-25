@@ -1,5 +1,5 @@
 baseURL: "https://examplesite.com/"
-title: ExampleSite
+title: Mengma's Blog
 pagination.pagerSize: 5
 theme: PaperMod
 
@@ -16,8 +16,8 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Mengma's Blog
+  description: "Mengma's Blog description"
   keywords: [Blog, Portfolio, PaperMod]
   author: Me
   # author: ["Me", "You"] # multiple authors
@@ -45,21 +45,21 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/favicon.ico"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
+    icon: /favicon.ico
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
+    title: Mengma's Blog
     subtitle: "This is subtitle"
     imageUrl: "<img location>"
     imageWidth: 120
@@ -76,13 +76,13 @@ params:
     Title: "Hi there \U0001F44B"
     Content: Welcome to my blog
 
-  socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
-    - name: github
-      url: "https://github.com/"
+  # socialIcons:
+  #   - name: twitter
+  #     url: "https://twitter.com/"
+  #   - name: stackoverflow
+  #     url: "https://stackoverflow.com"
+  #   - name: github
+  #     url: "https://github.com/"
 
   analytics:
     google:
