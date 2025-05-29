@@ -261,7 +261,3 @@ GPT-1 是深度学习时代自然语言处理发展的重要里程碑。它不�
 1. Radford et al., *Improving Language Understanding by Generative Pre-training*, 2018.
 2. Vaswani et al., *Attention Is All You Need*, NeurIPS 2017.
 3. Devlin et al., *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*, NAACL 2019.
-
----
-
-如果你觉得这篇文章对你有帮助，欢迎点赞、收藏或分享！你也可以关注我，后续将持续更新关于大语言模型（LLM）、Transformer、深度学习等内容的技术文章。
