@@ -1,7 +1,7 @@
 +++
 date = '2025-05-29'
 draft = false
-title = 'GPT-1 论文'
+title = 'GPT-1：预训练自回归语言建模'
 categories = ['GPT-1', '经典论文']
 tags = ['GPT-1', 'Attention机制', '经典论文']
 +++
