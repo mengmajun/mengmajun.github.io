@@ -233,7 +233,7 @@ $$
 除了单独微调，GPT-1 还尝试在微调过程中加入原始语言模型目标作为辅助任务：
 
 $$
-\mathcal{L}_{total} = \lambda \cdot \mathcal{L}_{task} + (1 - \lambda) \cdot \mathcal{L}_{LM}
+\mathcal{L}_{total} = \lambda \cdot \mathcal{L_task} + (1 - \lambda) \cdot \mathcal{L_lm}
 $$
 
 这样可以提升模型泛化能力。
