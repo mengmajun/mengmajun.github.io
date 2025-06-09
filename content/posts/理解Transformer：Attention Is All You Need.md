@@ -1,5 +1,12 @@
++++
+date = '2025-06-09'
+draft = false
+title = '理解Transformer：Attention Is All You Need'
+categories = ['人工智能', '大模型']
+tags = ['经典论文']
++++
 
-# 理解Transformer：《Attention Is All You Need》
+# 理解Transformer：Attention Is All You Need
 
 > “Attention is all you need” 是 Google Brain 和多伦多大学于2017年发表的一篇革命性论文，提出了全新的深度学习架构——**Transformer**。该模型彻底抛弃了传统的循环神经网络（RNN）和卷积神经网络（CNN），仅使用注意力机制（Attention Mechanism）来建模序列数据，在机器翻译等领域取得了巨大成功，并启发了后续一系列自然语言处理模型的发展（如BERT、GPT等）。
 
