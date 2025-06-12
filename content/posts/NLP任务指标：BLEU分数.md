@@ -197,9 +197,9 @@ bleu_score = brevity_penalty * average_precision * 100
 | 3   | trigram     | 4         | 2          | 0.5       |
 | 4   | four-gram   | 3         | 1          | 0.3333    |
 
-- 平均精度：≈ 0.5667
+- 平均精度：≈ 0.6232
 - brevity penalty：1
-- **最终 BLEU 分数：≈ 56.67**
+- **最终 BLEU 分数：≈ 62.32**
 
 ---
 
