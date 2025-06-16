@@ -61,7 +61,7 @@ Transformer 中的 QKV 矩阵运算推导
   - Agent 架构综述 （如 ReAct, Reflexion, Think-Action-Observe loop）
   - 深度研究端到端WebDancer
 - 强化学习
-  - 强化学习课程
+  - 强化学习课程 西湖大学赵世钰老师的《强化学习的数学原理》
 
 
 
