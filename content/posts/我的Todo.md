@@ -19,6 +19,8 @@ tags = ['Todo']
 
 ## Idea
 
+- 现在的RAG技术已经过度到AI自主推理调用知识库，比如阿里的RAG团队的WebDancer、还有一些自主查询RAG论文这些需要重点关注
+- 还有就是现在的多Agent系统开发，比如Anthrproic的多agent设计，实质是prompt设计+推理大模型能力，这部分也需要看，最后是复现，这部分可以看看字节的deepflow设计
 - AI技术的内容生产流水线，自动博客写作，论文解读等，微博有一个分享
 - 项目：RAG论文复现RAFT、自然语言转SQL模型训练基于GRPO、深度研究端到端WebDancer
 - 深度学习基础知识
