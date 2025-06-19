@@ -581,6 +581,9 @@ class MultiheadAttention(nn.Module):
 
 ### 逐位置FFN
 
+逐点前馈网络本质上是两层全连接层，对输入的每个位置（token）独立进行相同的变换，因此称为“逐点”（point-wise）。其作用是：
+1. **增加模型的表达能力**：通过非线性激活函数引入复杂映射。
+2. **维度变换**：先扩展维度，再压缩回原始维度，类似“瓶颈结构”。
 
 ```python
 import torch.nn as nn
