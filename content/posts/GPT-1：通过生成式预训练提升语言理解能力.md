@@ -8,7 +8,7 @@ tags = ['GPT-1', 'Attention机制', '经典论文']
 ---
 ##  通过生成式预训练提升语言理解能力
 
-[Improving Language Understanding by Generative Pre-training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf).
+[论文链接：Improving Language Understanding by Generative Pre-training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf).
 
 - "Generative Pre-Training" - “生成式预训练”：“生成式” 对应模型基于自回归（Autoregressive）的生成特性（如按序预测下一个 token）；“预训练” 明确体现无监督预训练阶段的核心任务。
 - "Improving Language Understanding" - “提升语言理解能力”：虽 GPT-1 以生成任务为核心，但论文中也验证了其在下游理解任务（如问答、文本分类）的迁移能力，“理解” 一词兼顾了模型的双向价值（生成与理解）
