@@ -1,11 +1,20 @@
 +++
 date = '2025-05-29'
 draft = false
-title = 'GPT-1：预训练自回归语言建模'
+title = 'GPT-1：通过生成式预训练提升语言理解能力'
 categories = ['GPT-1', '经典论文']
 tags = ['GPT-1', 'Attention机制', '经典论文']
 +++
 ---
+##  通过生成式预训练提升语言理解能力
+
+[Improving Language Understanding by Generative Pre-training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf).
+
+- "Generative Pre-Training" - “生成式预训练”：“生成式” 对应模型基于自回归（Autoregressive）的生成特性（如按序预测下一个 token）；“预训练” 明确体现无监督预训练阶段的核心任务。
+- "Improving Language Understanding" - “提升语言理解能力”：虽 GPT-1 以生成任务为核心，但论文中也验证了其在下游理解任务（如问答、文本分类）的迁移能力，“理解” 一词兼顾了模型的双向价值（生成与理解）
+
+---
+
 
 ## 引言
 
@@ -254,10 +263,3 @@ GPT-1 是深度学习时代自然语言处理发展的重要里程碑。它不�
 - 注意力机制的数学推导与实现细节；
 - 模型结构、输入表示与训练流程。
 
----
-
-## 参考资料
-
-1. [Radford et al., *Improving Language Understanding by Generative Pre-training*, 2018](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf).
-2. Vaswani et al., *Attention Is All You Need*, NeurIPS 2017.
-3. Devlin et al., *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*, NAACL 2019.
