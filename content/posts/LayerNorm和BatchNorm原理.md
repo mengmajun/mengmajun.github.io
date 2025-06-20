@@ -1,5 +1,5 @@
 +++ 
-date = '2025-06-12' 
+date = '2025-06-19' 
 draft = false 
 title = 'LayerNorm和BatchNorm原理' 
 categories = ['基础原理'] 
