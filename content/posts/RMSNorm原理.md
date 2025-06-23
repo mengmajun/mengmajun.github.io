@@ -1,7 +1,7 @@
 +++ 
 date = '2025-06-23' 
 draft = false 
-title = 'RMSNorm' 
+title = 'RMSNorm原理' 
 categories = ['基础原理'] 
 tags = ['RMSNorm', '归一化'] 
 +++
