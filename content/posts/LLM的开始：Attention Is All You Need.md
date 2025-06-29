@@ -15,7 +15,7 @@ tags = ['经典论文']
 
 ## 一、整体架构概览
 
-![Transformer整体结构图](https://ask.qcloudimg.com/http-save/yehe-2510408/3bf0187d209e2cc79f28d6be94685fc2.png)
+![Transformer整体结构图](/transformer.png)
 
 Transformer 主要由两部分组成：
 
@@ -113,7 +113,7 @@ $$
 - V：Value 向量
 - $d_k$：Key 向量的维度，用于缩放防止内积过大导致梯度消失。
 
-![Scaled Dot-Product Attention](https://transformers.run/assets/img/attention/attention.png)
+![Scaled Dot-Product Attention](/scale-attention.png)
 
 ### 2. 多头注意力（Multi-Head Attention）
 
@@ -121,7 +121,7 @@ $$
 
 基本思想是将 Q、K、V 分别线性变换到多个不同的子空间（称为 Head），然后分别计算注意力，最后拼接并再次线性变换。
 
-![Multi-Head Attention](https://ask.qcloudimg.com/http-save/yehe-2510408/3650a8ae29510a9036270ed8dfd99fdb.png)
+![Multi-Head Attention](/multi-attention.png)
 
 数学表达如下：
 
