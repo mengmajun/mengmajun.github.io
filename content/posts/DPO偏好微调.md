@@ -276,26 +276,26 @@ $$
 我们回到 Bradley-Terry 模型：
 
 $$
-p^*(y\_1 \succ y\_2 | x) = \sigma(r^*(x, y\_1) - r^*(x, y\_2))
+p\^*(y\_1 \succ y\_2 | x) = \sigma(r\^*(x, y\_1) - r\^*(x, y\_2))
 $$
 
 代入上面反向得到的奖励函数表达式：
 
 $$
-r^*(x, y\_1) - r^*(x, y\_2) = \beta \log \frac{\pi^*(y\_1|x)}{\pi\_{\text{ref}}(y\_1|x)} - \beta \log \frac{\pi^*(y\_2|x)}{\pi\_{\text{ref}}(y\_2|x)}
+r\^*(x, y\_1) - r\^*(x, y\_2) = \beta \log \frac{\pi\^*(y\_1|x)}{\pi\_{\text{ref}}(y\_1|x)} - \beta \log \frac{\pi\^*(y\_2|x)}{\pi\_{\text{ref}}(y\_2|x)}
 $$
 
 所以偏好概率变为：
 
 $$
-p^*(y\_1 \succ y\_2 | x) = \sigma\left( \beta \log \frac{\pi^*(y\_1|x)}{\pi\_{\text{ref}}(y\_1|x)} - \beta \log \frac{\pi^*(y\_2|x)}{\pi\_{\text{ref}}(y\_2|x)} \right)
+p\^*(y\_1 \succ y\_2 | x) = \sigma\left( \beta \log \frac{\pi\^*(y\_1|x)}{\pi\_{\text{ref}}(y\_1|x)} - \beta \log \frac{\pi\^*(y\_2|x)}{\pi\_{\text{ref}}(y\_2|x)} \right)
 $$
 
 现在我们把 $\pi^*$ 替换成我们的参数化策略 $\pi_\theta$，就得到了 DPO 的目标函数：
 
 $$
 \mathcal{L}\_{\text{DPO}}(\pi\_\theta; \pi\_{\text{ref}}) = -\mathbb{E}\_{(x, y\_w, y\_l) \sim \mathcal{D}} \left[ \log \sigma\left( \beta \log \frac{\pi\_\theta(y\_w|x)}{\pi\_{\text{ref}}(y\_w|x)} - \beta \log \frac{\pi\_\theta(y\_l|x)}{\pi\_{\text{ref}}(y\_l|x)} \right) \right]
-\quad (式 7)
+\quad
 $$
 
 这就是 DPO 的核心目标函数，也就是说，我们成功地将偏好概率完全用策略 $\pi^*$ 来表达了，而不再需要奖励函数！
