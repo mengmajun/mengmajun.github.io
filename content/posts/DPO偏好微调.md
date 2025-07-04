@@ -172,7 +172,7 @@ DPO 是对传统 RLHF 流程的一种改进方法。 RLHF 三个主要阶段：
 - 用上面学到的奖励函数来指导语言模型更新。
 - 最大化以下目标：
   $$
-  \max_{\pi_\theta} \mathbb{E}_{x,y}[r_\phi(x, y)] - \beta \mathbb{D}_{\text{KL}}[\pi_\theta(y|x) \| \pi_{\text{ref}}(y|x)]
+  \max_{\pi\_\theta} \mathbb{E}\_{x,y}[r\_\phi(x, y)] - \beta \mathbb{D}\_{\text{KL}}[\pi\_\theta(y|x) \| \pi\_{\text{ref}}(y|x)]
   $$
   这个 KL 正则项防止模型偏离初始策略太远，避免崩溃或不稳定。
 
@@ -276,25 +276,25 @@ $$
 我们回到 Bradley-Terry 模型：
 
 $$
-p^*(y_1 \succ y_2 | x) = \sigma(r^*(x, y_1) - r^*(x, y_2))
+p^*(y\_1 \succ y\_2 | x) = \sigma(r^*(x, y\_1) - r^*(x, y\_2))
 $$
 
 代入上面反向得到的奖励函数表达式：
 
 $$
-r^*(x, y_1) - r^*(x, y_2) = \beta \log \frac{\pi^*(y_1|x)}{\pi\_{\text{ref}}(y\_1|x)} - \beta \log \frac{\pi^*(y\_2|x)}{\pi\_{\text{ref}}(y\_2|x)}
+r^*(x, y\_1) - r^*(x, y\_2) = \beta \log \frac{\pi^*(y\_1|x)}{\pi\_{\text{ref}}(y\_1|x)} - \beta \log \frac{\pi^*(y\_2|x)}{\pi\_{\text{ref}}(y\_2|x)}
 $$
 
 所以偏好概率变为：
 
 $$
-p^*(y\_1 \succ y\_2 | x) = \sigma\left( \beta \log \frac{\pi^*(y_1|x)}{\pi\_{\text{ref}}(y_1|x)} - \beta \log \frac{\pi^*(y\_2|x)}{\pi_{\text{ref}}(y_2|x)} \right)
+p^*(y\_1 \succ y\_2 | x) = \sigma\left( \beta \log \frac{\pi^*(y\_1|x)}{\pi\_{\text{ref}}(y\_1|x)} - \beta \log \frac{\pi^*(y\_2|x)}{\pi\_{\text{ref}}(y\_2|x)} \right)
 $$
 
 现在我们把 $\pi^*$ 替换成我们的参数化策略 $\pi_\theta$，就得到了 DPO 的目标函数：
 
 $$
-\mathcal{L}_{\text{DPO}}(\pi_\theta; \pi_{\text{ref}}) = -\mathbb{E}_{(x, y_w, y_l) \sim \mathcal{D}} \left[ \log \sigma\left( \beta \log \frac{\pi_\theta(y_w|x)}{\pi_{\text{ref}}(y_w|x)} - \beta \log \frac{\pi_\theta(y_l|x)}{\pi_{\text{ref}}(y_l|x)} \right) \right]
+\mathcal{L}\_{\text{DPO}}(\pi\_\theta; \pi\_{\text{ref}}) = -\mathbb{E}\_{(x, y\_w, y\_l) \sim \mathcal{D}} \left[ \log \sigma\left( \beta \log \frac{\pi\_\theta(y\_w|x)}{\pi\_{\text{ref}}(y\_w|x)} - \beta \log \frac{\pi\_\theta(y\_l|x)}{\pi\_{\text{ref}}(y\_l|x)} \right) \right]
 \quad (式 7)
 $$
 
@@ -319,7 +319,7 @@ $$
 我们来看看这个损失函数的梯度：
 
 $$
-\nabla_\theta \mathcal{L}_{\text{DPO}} = -\beta \mathbb{E}_{(x, y_w, y_l)} \left[ \sigma(\hat{r}(x, y_l) - \hat{r}(x, y_w)) \cdot \left( \nabla_\theta \log \pi(y_w|x) - \nabla_\theta \log \pi(y_l|x) \right) \right]
+\nabla\_\theta \mathcal{L}\_{\text{DPO}} = -\beta \mathbb{E}\_{(x, y\_w, y\_l)} \left[ \sigma(\hat{r}(x, y\_l) - \hat{r}(x, y\_w)) \cdot \left( \nabla\_\theta \log \pi(y\_w|x) - \nabla\_\theta \log \pi(y\_l|x) \right) \right]
 $$
 
 其中 $\hat{r}(x, y) = \beta \log \frac{\pi_\theta(y|x)}{\pi_{\text{ref}}(y|x)}$
