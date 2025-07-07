@@ -20,11 +20,11 @@ PPO的目标是让智能体的策略（即动作选择方式）**越来越好**�
 
 ### **2. 目标函数拆解**
 公式如下：
-{{< math >}}
+
 $$
-L^{CLIP}(\theta) = \mathbb{E}_t \left[ \min \left( \underbrace{r_t(\theta) A_t}_{\text{原始目标}}, \underbrace{\text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) A_t}_{\text{截断后目标}} \right) \right]
+L\^{CLIP}(\theta) = \mathbb{E}\_t \left[ \min \left( \underbrace{r\_t(\theta) A\_t}_{\text{原始目标}}, \underbrace{\text{clip}(r\_t(\theta), 1-\epsilon, 1+\epsilon) A\_t}_{\text{截断后目标}} \right) \right]
 $$
-{{< /math >}}
+
 
 #### **（1）核心变量解释**
 - **$ r_t(\theta) = \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} $**  
