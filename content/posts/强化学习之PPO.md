@@ -22,7 +22,7 @@ PPO的目标是让智能体的策略（即动作选择方式）**越来越好**�
 公式如下：
 
 $$
-L\^{CLIP}(\theta) = \mathbb{E}\_t \left[ \min \left( \underbrace{r\_t(\theta) A\_t}_{\text{原始目标}}, \underbrace{\text{clip}(r\_t(\theta), 1-\epsilon, 1+\epsilon) A\_t}_{\text{截断后目标}} \right) \right]
+L^{CLIP}(\theta) = \mathbb{E}\_t \left[ \min \left( \underbrace{r\_t(\theta) A\_t}\_{\text{原始目标}}, \underbrace{\text{clip}(r\_t(\theta), 1-\epsilon, 1+\epsilon) A\_t}\_{\text{截断后目标}} \right) \right]
 $$
 
 
