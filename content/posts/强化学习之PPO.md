@@ -20,9 +20,11 @@ PPO的目标是让智能体的策略（即动作选择方式）**越来越好**�
 
 ### **2. 目标函数拆解**
 公式如下：
+{{< math >}}
 $$
-L^{CLIP}(\theta) = \mathbb{E}\_t \left[ \min \left( \underbrace{r\_t(\theta) A\_t}_{\text{原始目标}}, \underbrace{\text{clip}(r\_t(\theta), 1-\epsilon, 1+\epsilon) A\_t}_{\text{截断后目标}} \right) \right]
+L^{CLIP}(\theta) = \mathbb{E}_t \left[ \min \left( \underbrace{r_t(\theta) A_t}_{\text{原始目标}}, \underbrace{\text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) A_t}_{\text{截断后目标}} \right) \right]
 $$
+{{< /math >}}
 
 #### **（1）核心变量解释**
 - **$ r_t(\theta) = \frac{\pi_\theta(a|s)}{\pi_{\theta_{\text{old}}}(a|s)} $**  
@@ -110,4 +112,9 @@ PPO的目标函数本质是：
 
 这种设计让PPO成为**既高效又稳定**的强化学习算法。
 
+---
 
+参考资料
+
+- [【论文解读】PPO：近端策略优化算法（Proximal Policy Optimization Algorithms）](https://zhuanlan.zhihu.com/p/9914683156)
+- [动手学强化学习](https://hrl.boyuai.com/chapter/2/ppo%E7%AE%97%E6%B3%95)
