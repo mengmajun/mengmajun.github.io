@@ -9,6 +9,7 @@ tags = ['代码阅读', 'Text2SQL', '强化学习']
 
 [Reasoning-SQL：基于 SQL 定制化部分奖励的强化学习提升文本到 SQL 推理能力](https://www.arxiv.org/abs/2503.23157)
 
+- 论文时间2025-03-29
 - 论文提供了伪代码
 - 论文基于Qwen2.5-coder模型
 
