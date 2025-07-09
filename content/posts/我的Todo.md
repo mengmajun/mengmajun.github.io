@@ -6,6 +6,11 @@ categories = ['Todo']
 tags = ['Todo'] 
 +++
 
+## 2025-07
+- agentic rag，rag可以作为一个重要的研究点
+- GRPO在自然语言转SQL的研究，可以作为自己的一个方向
+- 多Agent系统，RL Agent，系统构建，可以梳理出来一个实现综述
+
 ## 2025-06
 
 - 大模型经典论文和代码复现
