@@ -2,8 +2,8 @@
 date = '2025-07-09' 
 draft = false 
 title = 'Reasoning-SQL：基于 SQL 定制化部分奖励的强化学习提升文本到 SQL 推理能力' 
-categories = ['代码阅读', 'Text2SQL'] 
-tags = ['代码阅读', 'Text2SQL', '强化学习'] 
+categories = ['论文阅读', 'Text2SQL'] 
+tags = ['Text2SQL', '强化学习', 'GRPO'] 
 +++
 
 
