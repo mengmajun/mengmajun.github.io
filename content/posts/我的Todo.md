@@ -10,6 +10,8 @@ tags = ['Todo']
 - agentic rag，rag可以作为一个重要的研究点
 - GRPO在自然语言转SQL的研究，可以作为自己的一个方向
 - 多Agent系统，RL Agent，系统构建，可以梳理出来一个实现综述
+- 手动实现GRPO
+- 每周学一节强化学习，hugging face的课程用游戏来学习
 
 ## 2025-06
 
