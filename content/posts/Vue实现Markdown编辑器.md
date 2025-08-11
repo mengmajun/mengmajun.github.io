@@ -14,6 +14,7 @@ categories = ['Vue组件']
 
 ## 安装依赖
 > pnpm install @tailwindcss/typography 样式
+
 > pnpm install marked  将markdown渲染为html
 
 ## MarkdownEditor.vue
